@@ -48,3 +48,5 @@ dkill-all() { docker kill $(docker ps -a -q); }
 
 # Remove all containers
 drm-all() { docker rm $(docker ps -a -q); }
+
+dcup() { docker-compose up -d }
